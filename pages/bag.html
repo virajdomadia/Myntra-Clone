@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Myntra Functional Clone</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <title>Myntra Clone</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/bag.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -14,7 +15,7 @@
         <a href="#"
           ><img
             class="myntra_home"
-            src="images/myntra_logo.webp"
+            src="../images/myntra_logo.webp"
             alt="Myntra Home"
         /></a>
       </div>
@@ -44,17 +45,20 @@
           <span class="action_name">Wishlist</span>
         </div>
 
-        <a class="action_container" href="pages/bag.html">
+        <div class="action_container">
           <span class="material-symbols-outlined action_icon"
             >shopping_bag</span
           >
           <span class="action_name">Bag</span>
           <span class="bag-item-count">0</span>
-        </a>
+        </div>
       </div>
     </header>
     <main>
-      <div class="items-container"></div>
+      <div class="bag-page">
+        <div class="bag-items-container"></div>
+        <div class="bag-summary"></div>
+      </div>
     </main>
     <footer>
       <div class="footer_container">
@@ -98,7 +102,8 @@
 
       <div class="copyright">© 2023 www.myntra.com. All rights reserved.</div>
     </footer>
-    <script src="data/item.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="../data/item.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/bag.js"></script>
   </body>
 </html>
